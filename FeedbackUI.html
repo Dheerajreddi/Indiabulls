@@ -81,18 +81,18 @@
     }
 
     .label {
-      border: none;
+      /*border: none;
       color: #365196;
-      font-weight: bold;
-      padding: 2px;
+      font-weight: bold;*/
+      padding: 1px;
       text-align: center;
-      font-size: 16px;
+      font-size: 10px;
       display: inline-block;
-      margin: 3px 2px;
-      border-radius: 8px;
+      margin: 3px 3px;
+      border-radius: 4px;
     }
 
-    .label1 {
+/*    .label1 {
       border: none;
       font-weight: bold;
       color: #CC3300;
@@ -103,7 +103,7 @@
       margin: 3px 2px;
       border-radius: 8px;
       display: none;
-    }
+    }*/
 
     .textarea {
       width: 200px;
@@ -206,7 +206,7 @@
       // let cdnLinks ={
       //   ''
       // }
-      
+
       let first = [];
       let second = [];
       for (let i = 0; i < allProducts.length; i++) {
@@ -229,7 +229,8 @@
           }).css('background-image', 'url(https://cdn.yellowmessenger.com/Q7DABv053kVi1604061835028.png)').css('background-size', 'cover')
           ).append(
             $('<label>').prop({
-              for: value
+              for: value,
+                class:'label'
             }).html(value)
           )
         )
@@ -247,7 +248,8 @@
           }).css('background-image', 'url(https://cdn.yellowmessenger.com/Q7DABv053kVi1604061835028.png)').css('background-size', 'cover')
           ).append(
             $('<label>').prop({
-              for: value2
+              for: value2,
+                class:'label'
             }).html(value2)
           )
         )
