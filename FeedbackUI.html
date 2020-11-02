@@ -144,20 +144,10 @@
       outline: 0;
     }
 
-    form#productsList input[type="radio"].good {
+    /*form#productsList input[type="radio"].good {
       background-image: url(" https://cdn.yellowmessenger.com/Q7DABv053kVi1604061835028.png");
       background-size: cover;
-    }
-
-    form#productsList input[type="radio"].average {
-      background-image: url(" https://cdn.yellowmessenger.com/Q7DABv053kVi1604061835028.png");
-      background-size: cover;
-    }
-
-    form#productsList input[type="radio"].poor {
-      background-image: url(" https://cdn.yellowmessenger.com/Q7DABv053kVi1604061835028.png");
-      background-size: cover;
-    }
+    }*/
 
     .mtt {
       position: fixed;
@@ -212,6 +202,11 @@
       var allProducts = product_.split('$')
       console.log('List of products - ', allProducts)
       //var allProducts = ['dhani Account', 'dhani Pay Wallet', 'dhani Account', 'dhani Doctor', 'dhani Pay Wallet'];
+
+      // let cdnLinks ={
+      //   ''
+      // }
+      
       let first = [];
       let second = [];
       for (let i = 0; i < allProducts.length; i++) {
@@ -231,9 +226,7 @@
             name: 'product',
             class: 'good',
             value: value,
-            // style: background-image: 'https://cdn.yellowmessenger.com/6lfhoxFLXjuL1602223181018.jpg',
-            // background-size: cover;
-          })
+          }).css('background-image', 'url(https://cdn.yellowmessenger.com/Q7DABv053kVi1604061835028.png)').css('background-size', 'cover')
           ).append(
             $('<label>').prop({
               for: value
@@ -251,9 +244,7 @@
             name: 'product',
             class: 'good',
             value: value2,
-            // style: background-image: 'https://cdn.yellowmessenger.com/6lfhoxFLXjuL1602223181018.jpg',
-            // background-size: cover;
-          })
+          }).css('background-image', 'url(https://cdn.yellowmessenger.com/Q7DABv053kVi1604061835028.png)').css('background-size', 'cover')
           ).append(
             $('<label>').prop({
               for: value2
