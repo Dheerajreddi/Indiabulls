@@ -318,7 +318,7 @@
                 var x = document.getElementById("txt").value.replace(/  +/g, ' ').trim();
                 let currentWords1 = document.getElementById("txt").value.replace(/  +/g, ' ').split(/[\s]+/).length;
                 if (x.length > 0) {
-                    if (currentWords1 < 50 && x.length < 100) {
+                    if (currentWords1 < 10) {
                         count = count + 1
                         if (count === 1) {
 
@@ -329,7 +329,7 @@
                                 message = message.concat("కొనసాగడానికి దయచేసి కనీసం 100 అక్షరాలు లేదా 50 పదాలను నమోదు చేయండి.")
                             }
                             else {
-                                message = message.concat("Please provide min 100 characters/50 words to proceed.")
+                                message = message.concat("Please provide atleast 10 words to proceed.")
                             }
                             //message = message.concat("Please provide min 100 characters/50 words to proceed.")
                         }
